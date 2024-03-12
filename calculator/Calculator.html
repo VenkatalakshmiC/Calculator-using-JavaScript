@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            background-image: radial-gradient(lightpink,yellow);
+        }
+        #main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red;
+            height: 381px;
+            width: 347px;
+            background-color: rgb(79, 54, 54);
+            box-shadow: 2px 2px 30px red;
+            border-radius: 10px;
+        }
+        #valu>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: white;
+        }
+        #one>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: white;
+        }
+        #two>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: white;
+        }
+        #three>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: white;
+        }
+        #four>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: aliceblue;
+        }
+        input{
+            height: 80px;
+            width: 300px;
+            font-style: italic; 
+        }
+        
+     
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="">
+            <div id="dipaly">
+                <input type="text" name="display" style="font-size: x-large;">
+            </div>
+            <div id="valu">
+                <input type="button" value="AC" onclick="display.value=' '">
+                <input  type="button" value="DEL" onclick="display.value=display.value.toString().slice(0,-1)">
+                <input type="button" value="%" onclick="display.value+='%'">
+                <input  type="button" value="/" onclick="display.value+='/'">
+            </div>
+            <div id="one">
+                <input type="button" value="7" onclick="display.value+='7'">
+                <input type="button" value="8" onclick="display.value+='8'">
+                <input type="button" value="9" onclick="display.value+='9'">
+                <input type="button" value="" onclick="display.value+=''">
+            </div>
+            <div id="two">
+                <input type="button" value="4" onclick="display.value+='4'">
+                <input type="button" value="5" onclick="display.value+='5'">
+                <input type="button" value="6" onclick="display.value+='6'">
+                <input type="button" value="-" onclick="display.value+='-'">
+            </div>
+            <div id="three">
+                <input type="button" value="1" onclick="display.value+='1'">
+                <input type="button" value="2" onclick="display.value+='2'">
+                <input type="button" value="3" onclick="display.value+='3'">
+                <input type="button" value="+" onclick="display.value+='+'">
+            </div>
+            <div id="four">
+                <input type="button" value="00" onclick="display.value+='00'">
+                <input type="button" value="0" onclick="display.value+='0'">
+                <input type="button" value="." onclick="display.value+='.'">
+               <input type="button" value="=" onclick="display.value=eval(display.value)">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
